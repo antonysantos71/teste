@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>meu documento </title>
+  <style>
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    button{
+      width: 200px;
+      height: 40px;
+      background: darkblue;
+      font-size: large;
+      color: white;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div>
+    <button>click para ver a mágica </button>
+    <h3></h3>
+    <!-- <img src="" alt=""> -->
+  </div>
+  <script>
+    let div = document. querySelector("div")
+    let btn = document.querySelector("button")
+    let img = document.querySelector("img")
+    let h3 = document.querySelector("h3")
+    btn.addEventListener("click" , () => {
+      div.style.display = "none"
+      btn.style.display = "none"
+      setInterval(() => {
+        h3.innerText = "sumiu kslkl"
+        // img.src = "/aula01/aceitar.png"
+        h3.style.color = "white"
+        document.body.style.background = "black"
+      }, 3000)
+    })
+  </script>
+</body>
+
+</html>
